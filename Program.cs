@@ -15,9 +15,6 @@ namespace WindowsFormsApp1
         [STAThread]
         static void Main()
         {
-            Thread t = new Thread(Connecttoserver);
-            t.Name = "connect thread";
-            t.Start();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
