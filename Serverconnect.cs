@@ -11,17 +11,16 @@ namespace WindowsFormsApp1
 {
     class Serverconnect
     {
+        
+        private RequestSocket client;
         public Serverconnect()
         {
             client = new RequestSocket();
             client.Connect("tcp://localhost:5555");
         }
 
-        private RequestSocket client;
-
-        public void Serverconnector()
+        public void Connectortest()
         {
-            
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Sending Hello");
@@ -29,6 +28,24 @@ namespace WindowsFormsApp1
                 var message = client.ReceiveFrameString();
                 Console.WriteLine("Received {0}", message);
             }
+        }
+
+        public void Get_mission()
+        { 
+            // TODO:fetch mission from the server , make the mission list like below.
+            // List<List<string>> = [panelid, origin image path, result path]
+        }
+
+        public bool push_panel_result()
+        {
+            // TODO:
+            return true;
+        }
+
+        public bool check_user_password()
+        {
+            // TODO:
+            return true;
         }
     }
 }
