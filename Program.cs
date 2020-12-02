@@ -13,17 +13,13 @@ namespace WindowsFormsApp1
         /// 应用程序的主入口点。
         /// </summary>
         [STAThread]
+
         static void Main()
         {
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-        }
-
-        static void Connecttoserver()
-        {
-            Serverconnect asd = new Serverconnect();
-            asd.Serverconnector();
         }
 
     }

@@ -28,14 +28,15 @@ namespace WindowsFormsApp1
             local_directory = new DirectoryInfo(Path.Combine(local_path_, origin_directory.Name));
 
             // check if local directory is exist,in case of the operator had inspect one panel for twise;
-            delete_filedirectory();
+            Delete_filedirectory();
             // copy file and directory to local.
-            copyflag = copy_filetolocal();
+            copyflag = Copy_filetolocal();
             // read the image form disk to memory.
-            readimage();
+            Readimage();
         }
 
-        public bool copy_filetolocal()
+        // TODO: read file through net -->memory -->save image
+        public bool Copy_filetolocal()
         {
             // copy origin_directory 中的图像到 local_path ，copy 的图像序号遵循image_list
             // copy 成功返回 TRUE 失败返回FALSE。
@@ -58,7 +59,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        public bool readimage()
+        public bool Readimage()
         {
             // read the image form disk to memory.
             foreach (string filename in image_list)
@@ -81,7 +82,7 @@ namespace WindowsFormsApp1
             return false;
         }
 
-        private void delete_filedirectory()
+        private void Delete_filedirectory()
         {
             // check if local directory is exist,in case of the operator had inspect one panel for twise;
             if (local_directory.Exists)
