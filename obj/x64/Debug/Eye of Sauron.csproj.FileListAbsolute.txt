@@ -58,3 +58,35 @@ D:\1218180\program2\c#\eye-of-sauron\obj\x64\Debug\WindowsFormsApp1.Form1.resour
 D:\1218180\program2\c#\eye-of-sauron\obj\x64\Debug\WindowsFormsApp1.Form2.resources
 D:\1218180\program2\c#\eye-of-sauron\obj\x64\Debug\WindowsFormsApp1.Properties.Resources.resources
 D:\1218180\program2\c#\eye-of-sauron\obj\x64\Debug\Eye of Sauron.csproj.GenerateResource.Cache
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\amd64\libzmq.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\i386\libzmq.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\amd64\libzmq.so
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\amd64\libzmq.dylib
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\WindowsFormsApp1.exe.config
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\WindowsFormsApp1.exe
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\WindowsFormsApp1.pdb
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\AsyncIO.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\NaCl.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\NetMQ.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Buffers.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Memory.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Threading.Tasks.Extensions.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.ValueTuple.dll
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\AsyncIO.pdb
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\NaCl.xml
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\NetMQ.xml
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Buffers.xml
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Memory.xml
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.Threading.Tasks.Extensions.xml
+D:\program\c#\WindowsFormsApp1\bin\x64\Debug\System.ValueTuple.xml
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\WindowsFormsApp1.Form1.resources
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\WindowsFormsApp1.Form2.resources
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\Eye of Sauron.csproj.GenerateResource.cache
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\Eye of Sauron.csproj.CoreCompileInputs.cache
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\Eye of Sauron.csproj.CopyComplete
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\WindowsFormsApp1.exe
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\WindowsFormsApp1.pdb
+D:\program\c#\WindowsFormsApp1\obj\x64\Debug\Eye of Sauron.csprojAssemblyReference.cache

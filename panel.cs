@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
     {
         DirectoryInfo origin_directory;
         DirectoryInfo local_directory;
-        string panel_id;
+        public string panel_id;
 
         //Dictionary<string, byte[]> image_dict = new Dictionary<string, byte[]>();
         Dictionary<string, MemoryStream> image_dict = new Dictionary<string, MemoryStream>();
@@ -21,10 +21,11 @@ namespace WindowsFormsApp1
 
         private string[] image_list = new string[] {"08_G64_CAM00.bmp", "01_WHITE_CAM00.bmp" };
         
-        public Panel(string origin_path_, string local_path_)
+        public Panel(string panel_id_,string origin_path_, string local_path_)
         {
             // origin_path_ like : "\\172.16.170.11\NetworkDrive\G_Drive\Defect Info\Origin\780A070001A9AAH04"
             // local_path_ like : "D:\eye of sauron\runtime\1218180"
+            panel_id = panel_id_;
             origin_directory = new DirectoryInfo(origin_path_);
             local_directory = new DirectoryInfo(Path.Combine(local_path_, origin_directory.Name));
 
@@ -86,6 +87,7 @@ namespace WindowsFormsApp1
         private void Delete_filedirectory()
         {
             // check if local directory is exist,in case of the operator had inspect one panel for twise;
+            local_directory.Refresh();
             if (local_directory.Exists)
             {
                 // delete the directory even if there is files in directory.
@@ -115,5 +117,7 @@ namespace WindowsFormsApp1
         {
             return image_dict["08_G64_CAM00.bmp"];
         }
+
+        
     }
 }

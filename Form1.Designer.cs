@@ -46,7 +46,7 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.login_button = new System.Windows.Forms.Button();
             this.cell_id_label = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.remain_label = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.origin_image_Box)).BeginInit();
@@ -84,7 +84,7 @@
             // blot_defect_button
             // 
             this.blot_defect_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.blot_defect_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.blot_defect_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.blot_defect_button.Location = new System.Drawing.Point(2, 2);
             this.blot_defect_button.Margin = new System.Windows.Forms.Padding(2);
             this.blot_defect_button.Name = "blot_defect_button";
@@ -97,7 +97,7 @@
             // vertical_defect_button
             // 
             this.vertical_defect_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.vertical_defect_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.vertical_defect_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.vertical_defect_button.Location = new System.Drawing.Point(186, 2);
             this.vertical_defect_button.Margin = new System.Windows.Forms.Padding(2);
             this.vertical_defect_button.Name = "vertical_defect_button";
@@ -110,7 +110,7 @@
             // horizontal_defect_button
             // 
             this.horizontal_defect_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.horizontal_defect_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.horizontal_defect_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.horizontal_defect_button.Location = new System.Drawing.Point(370, 2);
             this.horizontal_defect_button.Margin = new System.Windows.Forms.Padding(2);
             this.horizontal_defect_button.Name = "horizontal_defect_button";
@@ -123,7 +123,7 @@
             // ETC_defect_button
             // 
             this.ETC_defect_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ETC_defect_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.ETC_defect_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.ETC_defect_button.Location = new System.Drawing.Point(2, 89);
             this.ETC_defect_button.Margin = new System.Windows.Forms.Padding(2);
             this.ETC_defect_button.Name = "ETC_defect_button";
@@ -136,7 +136,7 @@
             // dark_defect_button
             // 
             this.dark_defect_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dark_defect_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.dark_defect_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.dark_defect_button.Location = new System.Drawing.Point(186, 89);
             this.dark_defect_button.Margin = new System.Windows.Forms.Padding(2);
             this.dark_defect_button.Name = "dark_defect_button";
@@ -149,7 +149,7 @@
             // bright_defect_button
             // 
             this.bright_defect_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bright_defect_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.bright_defect_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.bright_defect_button.Location = new System.Drawing.Point(370, 89);
             this.bright_defect_button.Margin = new System.Windows.Forms.Padding(2);
             this.bright_defect_button.Name = "bright_defect_button";
@@ -163,7 +163,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.s_grade_button, 2);
             this.s_grade_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.s_grade_button.Font = new System.Drawing.Font("Microsoft YaHei", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.s_grade_button.Font = new System.Drawing.Font("微软雅黑", 28F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.s_grade_button.ForeColor = System.Drawing.Color.ForestGreen;
             this.s_grade_button.Location = new System.Drawing.Point(186, 176);
             this.s_grade_button.Margin = new System.Windows.Forms.Padding(2);
@@ -177,7 +177,7 @@
             // e_grade_button
             // 
             this.e_grade_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.e_grade_button.Font = new System.Drawing.Font("Microsoft YaHei", 26F, System.Drawing.FontStyle.Bold);
+            this.e_grade_button.Font = new System.Drawing.Font("微软雅黑", 26F, System.Drawing.FontStyle.Bold);
             this.e_grade_button.ForeColor = System.Drawing.SystemColors.Highlight;
             this.e_grade_button.Location = new System.Drawing.Point(2, 176);
             this.e_grade_button.Margin = new System.Windows.Forms.Padding(2);
@@ -214,6 +214,7 @@
             this.origin_image_Box.Name = "origin_image_Box";
             this.tableLayoutPanel2.SetRowSpan(this.origin_image_Box, 2);
             this.origin_image_Box.Size = new System.Drawing.Size(1319, 737);
+            this.origin_image_Box.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.origin_image_Box.TabIndex = 0;
             this.origin_image_Box.TabStop = false;
             // 
@@ -256,7 +257,7 @@
             this.tableLayoutPanel3.Controls.Add(this.progressBar1, 0, 3);
             this.tableLayoutPanel3.Controls.Add(this.login_button, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.cell_id_label, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.label1, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.remain_label, 0, 1);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(8, 753);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
@@ -281,7 +282,7 @@
             // 
             this.login_button.BackColor = System.Drawing.Color.SandyBrown;
             this.login_button.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.login_button.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.login_button.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.login_button.Location = new System.Drawing.Point(2, 156);
             this.login_button.Margin = new System.Windows.Forms.Padding(2);
             this.login_button.Name = "login_button";
@@ -295,7 +296,7 @@
             // 
             this.cell_id_label.AutoSize = true;
             this.cell_id_label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cell_id_label.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
+            this.cell_id_label.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
             this.cell_id_label.Location = new System.Drawing.Point(3, 0);
             this.cell_id_label.Name = "cell_id_label";
             this.cell_id_label.Size = new System.Drawing.Size(319, 77);
@@ -303,22 +304,22 @@
             this.cell_id_label.Text = "CELL ID";
             this.cell_id_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label1
+            // remain_label
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(3, 77);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(319, 77);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "剩余任务数：";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.remain_label.AutoSize = true;
+            this.remain_label.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.remain_label.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Bold);
+            this.remain_label.Location = new System.Drawing.Point(3, 77);
+            this.remain_label.Name = "remain_label";
+            this.remain_label.Size = new System.Drawing.Size(319, 77);
+            this.remain_label.TabIndex = 3;
+            this.remain_label.Text = "剩余任务数：";
+            this.remain_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1902, 1024);
+            this.ClientSize = new System.Drawing.Size(1898, 1024);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.defect_Listview);
             this.Controls.Add(this.tableLayoutPanel2);
@@ -361,7 +362,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Button login_button;
         private System.Windows.Forms.Label cell_id_label;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label remain_label;
     }
 }
 

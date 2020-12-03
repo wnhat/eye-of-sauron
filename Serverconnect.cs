@@ -41,11 +41,28 @@ namespace WindowsFormsApp1
             // TODO:fetch mission from the server , make the mission list like below.
             // List<List<string>> = [panelid, origin image path, result path]
 
-            // only for offline test;
-            DirectoryInfo origin_directory = new DirectoryInfo(@"\\172.16.180.41\NetworkDrive\H_Drive\Defect Info\Origin");
+            //// only for offline test;
+            //DirectoryInfo origin_directory = new DirectoryInfo(@"\\172.16.180.41\NetworkDrive\H_Drive\Defect Info\Origin");
+            //DirectoryInfo[] directory_list = origin_directory.GetDirectories();
+            //List<List<string>> mission_list = new List<List<string>>();
+            
+            //foreach (DirectoryInfo panel_directory in directory_list)
+            //{
+            //    List<string> thispanel = new List<string>();
+            //    thispanel.Add(panel_directory.Name);
+            //    thispanel.Add(panel_directory.FullName);
+            //    thispanel.Add(panel_directory.Name);
+            //    mission_list.Add(thispanel);
+            //}
+
+            //return mission_list;
+            //// only for offline test;
+
+            // only for offline test(home);
+            DirectoryInfo origin_directory = new DirectoryInfo(@"D:\program\c#\testdata\Origin");
             DirectoryInfo[] directory_list = origin_directory.GetDirectories();
             List<List<string>> mission_list = new List<List<string>>();
-            
+
             foreach (DirectoryInfo panel_directory in directory_list)
             {
                 List<string> thispanel = new List<string>();
@@ -56,7 +73,8 @@ namespace WindowsFormsApp1
             }
 
             return mission_list;
-            // only for offline test;
+            // only for offline test(home);
+
         }
 
         public void check_user_password(string user_id)
