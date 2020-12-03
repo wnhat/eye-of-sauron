@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NetMQ;
 using NetMQ.Sockets;
-
+using System.IO;
 
 namespace WindowsFormsApp1
 {
@@ -18,9 +18,15 @@ namespace WindowsFormsApp1
             client = new RequestSocket();
             client.Connect("tcp://localhost:5555");
         }
+        // delegate & event;
+
+        public delegate void server_login_check_handler();
+        public event server_login_check_handler logevent;
+
 
         public void Connectortest()
         {
+            // for test
             for (int i = 0; i < 10; i++)
             {
                 Console.WriteLine("Sending Hello");
@@ -30,21 +36,40 @@ namespace WindowsFormsApp1
             }
         }
 
-        public void Get_mission()
+        public List<List<string>> Get_mission()
         { 
             // TODO:fetch mission from the server , make the mission list like below.
             // List<List<string>> = [panelid, origin image path, result path]
+
+            // only for offline test;
+            DirectoryInfo origin_directory = new DirectoryInfo(@"\\172.16.180.41\NetworkDrive\H_Drive\Defect Info\Origin");
+            DirectoryInfo[] directory_list = origin_directory.GetDirectories();
+            List<List<string>> mission_list = new List<List<string>>();
+            
+            foreach (DirectoryInfo panel_directory in directory_list)
+            {
+                List<string> thispanel = new List<string>();
+                thispanel.Add(panel_directory.Name);
+                thispanel.Add(panel_directory.FullName);
+                thispanel.Add(panel_directory.Name);
+                mission_list.Add(thispanel);
+            }
+
+            return mission_list;
+            // only for offline test;
         }
 
-        public bool push_panel_result()
+        public void check_user_password(string user_id)
         {
-            // TODO:
-            return true;
+            if (true)// TODO:check the server ,then return true or flase
+            {
+                logevent();
+            }
         }
 
-        public bool check_user_password()
+        public bool uploadjudgement(string panel_id,string op_id,string defectcode,string defectname)
         {
-            // TODO:
+            // TODO: server paneljudge funtion,return true if succese.
             return true;
         }
     }

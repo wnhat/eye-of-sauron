@@ -15,7 +15,9 @@ namespace WindowsFormsApp1
         public Panel_inf(List<List<string>> panellist_)
         {
             // List<List<string>> = [panelid, origin image path, result path]
+            panel_list = new List<Panel>();
             panel_path_list = panellist_;
+
             Refreshpanellist();
         }
 

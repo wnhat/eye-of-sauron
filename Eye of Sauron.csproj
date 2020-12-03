@@ -92,6 +92,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="defectcode.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>

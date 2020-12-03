@@ -15,29 +15,30 @@ namespace WindowsFormsApp1
     {
         // TODO: initial serverconnect and panel_inf
         Serverconnect server = new Serverconnect();
+        Defectcode defect_translator = new Defectcode();
+        Panel on_inspect_panel;
+        Panel_inf panel_manager;
         string user = "";
+
         public Form1()
         {
-            
+            // initial form1；
+
             InitializeComponent();
+            // register event；
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        // 
 
         private void login(object sender, EventArgs e)
         {
             if (user.Length == 0)
             {
-                // TODO: login form ;
-                login_button.Text = "用户登录";
+                Form2 the_login_form = new Form2();
+                the_login_form.logevent += new Form2.login_check_handler(server.check_user_password);
+                the_login_form.logevent += new Form2.login_check_handler(setlogintxt);
+                server.logevent += new Serverconnect.server_login_check_handler(the_login_form.Close);
+                the_login_form.ShowDialog();
             }
             else
             {
@@ -45,11 +46,42 @@ namespace WindowsFormsApp1
             }
         }
 
+        private void setlogintxt(string a)
+        {
+            login_button.Text = a;
+            login_button.BackColor = System.Drawing.Color.YellowGreen;
+            user = a;
+            panel_manager = new Panel_inf(server.Get_mission());
+            get_next_panel();
+        }
+
         private void logout()
         {
             user = "";
             login_button.Text = "用户登录";
+            login_button.BackColor = System.Drawing.Color.SandyBrown;
             // do someting else;
+        }
+
+        private void judge_function(object sender, EventArgs e)
+        {
+            Button sender_button = (Button)sender;
+            string defectname = sender_button.Text;
+            string defectcode = defect_translator.name2code(sender_button.Text);
+            string judge_op = user;
+            string panel_id = "";
+            if (!server.uploadjudgement(panel_id, user, defectcode, defectname))
+            {
+                // TODO;if connect to server failed, do something;
+                MessageBox.Show("panel judge upload failed");
+            }
+        }
+
+        private void get_next_panel()
+        {
+            panel_manager.Destroy_fist_panel();
+            on_inspect_panel = panel_manager.get_first_panel();
+            origin_image_Box.Image = new Bitmap(on_inspect_panel.get_image());
         }
     }
 }

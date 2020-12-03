@@ -17,9 +17,16 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
+        // register login event；
+        public delegate void login_check_handler(string a);
+        public event login_check_handler logevent;
 
+
+        private void login_function(object sender, EventArgs e)
+        {
+            string a = userid_box.Text;
+            logevent(a);
         }
+
     }
 }

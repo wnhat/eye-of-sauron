@@ -12,6 +12,7 @@ namespace WindowsFormsApp1
     {
         DirectoryInfo origin_directory;
         DirectoryInfo local_directory;
+        string panel_id;
 
         //Dictionary<string, byte[]> image_dict = new Dictionary<string, byte[]>();
         Dictionary<string, MemoryStream> image_dict = new Dictionary<string, MemoryStream>();
@@ -108,9 +109,11 @@ namespace WindowsFormsApp1
             {
                 local_directory.Create();
             }
-            
+        }
 
+        public MemoryStream get_image()
+        {
+            return image_dict["08_G64_CAM00.bmp"];
         }
     }
-
 }
